@@ -1,0 +1,14 @@
+<p>
+ <!--  <button routerLink="/home" routerLinkActive="active"> Home </button> -->
+ <button style="margin-left: 1410px;" (click)="refreshData()"> Refresh Data </button>
+  <ag-grid-angular style="width: 1520px; height: 500px;"
+                class="ag-theme-blue"
+                [rowData]="rowData"
+                [columnDefs]="columnDefs"
+                [enableSorting]="true"
+                [enableFilter]="true"
+                [gridOptions]="gridOptions" 
+                (gridReady)="onGridReady($event)">
+</ag-grid-angular>
+
+</p>
